@@ -21,9 +21,9 @@ class CreateNote extends PureComponent {
     this.setState({ title: '', body: '' });
   }
 
-  handleChange = ({ target }) {
+  handleChange = ({ target }) => {
     this.setState({ [target.name]: target.value });
-  }
+  };
 
   render() {
     const { title, body } = this.state;
